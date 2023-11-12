@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -99,7 +99,7 @@ li{
 
    
 
-    </script>
+
 <header>
     <h1> Our Simple Website</h1>
     <p>Discover amazing things at an unbeatable price!</p>
