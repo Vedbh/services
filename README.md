@@ -1,194 +1,176 @@
-
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Navbar and Sidebar</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
-        }
-
-        /* Navbar styling */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* Sidebar styling */
-        .sidebar {
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: -250px;
-            background-color: #111;
-            padding-top: 20px;
-            transition: 0.5s;
-        }
-
-        .sidebar a {
-            padding: 16px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-
-        .open-btn {
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            border-radius: 5px;
-            z-index: 2;
-        }
-
-        .open-btn:hover {
-            background-color: #555;
-        }
-
-        /* Page content */
-        .content {
-            margin-left: 250px;
-            padding: 1em;
-        }
-        li{
-            color: blueviolet;
-        }
-        form {
-            background-color: silver;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-        h2{
-            color: red;
-        }
-            </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Services and Pricing</title>
 </head>
 <body>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.pricing-card {
+    background-color: silver;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 1em 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+li{
+    background-color: green;
+}
+</style>
     <header>
-        <h1>Stylish Navbar and Sidebar</h1>
+        <h1>I PROIVDE YOU BEST WEBSITE CREATE (PAID)</h1> 
     </header>
 
-    <!-- Sidebar toggle button -->
-    <button class="open-btn" onclick="openNav()">☰ Open </button>
+    <section id="pricing">
+        <div class="pricing-card">
+            <h2>Basic Plan</h2>
+            <p class="price"><span class="original-price">$30</span> $20</p>
+            <p>Great for starters</p>
+            <a href="https://wa.me/6353074867" target="_blank">DM TO BUY</a>
+        </div>
+        <br>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="mySidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
+        <div class="pricing-card">
+            <h2>Standard Plan</h2>
+            <p class="price"><span class="original-price">$50</span> $30</p>
+            <p>Perfect for small businesses</p>
+            <a href="https://wa.me/6353074867" target="_blank">DM TO BUY</a>
+        </div>
+<br>
+        <div class="pricing-card">
+            <h2>Premium Plan</h2>
+            <p class="price"><span class="original-price">$80</span> $40</p>
+            <p>For advanced users</p>
+            <a href="https://wa.me/6353074867" target="_blank">DM TO BUY</a>
+        </div>
+        <ul>
 
-    <!-- Main content area -->
-    <div class="content">
-        <h2>Welcome to our website!</h2>
-        <li>Online Buisness Ideas To Earn Money....<a href="#"> More</a></li><br>
-        <li>How to download GTA 5 and GTA YCT In PC, download link and process...<a href="#">More</a></li><br>
+        </ul>
 
-    </div>
-    
-   <center> <h2>what the futures missing?</h2>
-    <center><form>
-        <!-- Add contact form fields here -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    
-      </div>
-      
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.left = "0";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.left = "-250px";
-        }
-       
+   
 
     </script>
+<header>
+    <h1> Our Simple Website</h1>
+    <p>Discover amazing things at an unbeatable price!</p>
+</header>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
 
+.price-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 1em 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+p {
+    margin: 1em 0;
+    color: #666;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+</style>
+<section id="pricing">
+    <div class="price-card">
+        <h2>Special Offer</h2>
+        <p class="price"><span class="original-price">$7</span> $5</p>
+        <p>Limited time discount!</p>
+<li>  <a href="https://wa.me/6353074867" target="_blank">DM TO BUY</a></li>
+    </div>
+</section>
