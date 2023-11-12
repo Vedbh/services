@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -91,4 +91,5 @@
         <p>&copy; 2023 Stylish Web Page. All rights reserved.</p>
     </footer>
 
-
+</body>
+</html>
